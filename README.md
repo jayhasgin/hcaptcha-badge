@@ -8,3 +8,8 @@ Copy the js file into site folder and add it's relative path with a script tag j
 
 ## Screenshot
 ![Screenshot](screenshot.png)
+
+## To Do
+* Translation
+* Dark theme
+* Tests for manual mode
