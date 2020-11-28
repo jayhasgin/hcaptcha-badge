@@ -6,9 +6,9 @@
 <body>
 	
 <!-- 
-* A simple form with an "id" attribute; 
-* Add class "hcaptcha" on form tag to enable script; 
-* Add button with type "submit" to trigger captcha on button click; 
+* Atleast one form with an "id" attribute; [Required] 
+* Add class "hcaptcha" on form tag to enable script; [Required]
+* Add button with type "submit" to trigger captcha on button click; [Required]
 -->
 
 <form id="auto_form" action="#" method="post" class="hcaptcha">
@@ -20,9 +20,8 @@
 </form>
 
 <!-- 
-* Replace dummy key with hCaptcha "site key" for production; 
-* Script can be disabled by not including the key variable; 
-* Add nonce attribute to script tag for CSP (optional). 
+* Replace dummy key with hCaptcha "site key" for production; [Required]
+* Add nonce attribute to script tag for CSP; [optional]
 -->
 
 <script type="text/javascript" src="../hcaptcha-badge.js?key=10000000-ffff-ffff-ffff-000000000001"></script>
