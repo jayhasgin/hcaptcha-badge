@@ -48,7 +48,7 @@ if(getParams("hcaptcha-badge.js").key!==undefined) {
 	
 	var hcApi = document.createElement('script');
 	hcApi.type = 'text/javascript';
-	hcApi.src = 'https://hcaptcha.com/1/api.js?onload=hcCaptchaCallback&render=explicit';
+	hcApi.src = 'https://hcaptcha.com/1/api.js?onload=hcCallback&render=explicit';
 	document.head.appendChild(hcApi);
 }
 
@@ -91,7 +91,7 @@ function getParams(script) {
 	return {};
 }
 
-function hcCaptchaCallback() {
+function hcCallback() {
 	for(var j=0; j<activehCaptchaIds.length; j++) {
 		var capId = hcaptcha.render(activehCaptchaIds[j], {'sitekey' : sKey});
 		document.getElementById(activehCaptchaIds[j]).setAttribute("data-hid", capId);
