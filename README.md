@@ -1,5 +1,5 @@
 # hcaptcha-badge-unofficial
-Plain JS badge for invisible hcaptcha. Inspired by reCaptcha badge.
+Vanilla-JS wrapper for invisible hcaptcha. Badge inspired by reCaptcha.
 
 ## Usage
 Copy the js file into site folder and add it's relative path with a script tag just before `</body>` tag.
